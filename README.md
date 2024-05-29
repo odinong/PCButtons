@@ -8,7 +8,7 @@ p.s this was made in winter 23, not sure if it still works!
 ## Installation
 
 1. Download the latest release package from the [Releases](https://github.com/odinong/PCButtons/releases/latest) page.
-2. Place the folder + dll inside in your gorilla tag plugins folder.
+2. Place the dll inside in your gorilla tag plugins folder.
 3. Click Tab To Enable!
 
 Example:
