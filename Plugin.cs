@@ -20,6 +20,7 @@ public class PCButtons : BaseUnityPlugin
 
     void Start()
     {
+        GameObject.Find("Shoulder Camera").SetActive(false);
         cursorObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         cursorObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
         cursorRenderer = cursorObject.GetComponent<Renderer>();
@@ -158,7 +159,7 @@ public class PCButtons : BaseUnityPlugin
     private void UpdateStatusText2()
     {
         statusText2 = "Right Hand: " + isActive2;
-        Debug.Log("Switched Hands");
+        Debug.Log("Right Hand");
     }
 
     void OnGUI()
@@ -195,6 +196,6 @@ public class PCButtons : BaseUnityPlugin
         guiStyle22.fontStyle = FontStyle.Bold;
         guiStyle22.alignment = TextAnchor.UpperRight;
         guiStyle22.normal.textColor = Color.magenta;
-        GUI.Label(new Rect(Screen.width - 300, 90, 300, 300), "Controls: \nLeft Alt: Enable The Mod\nRight Alt: Toggle Hand\nMade By Odin (lbaak. on discord)", guiStyle22);
+        GUI.Label(new Rect(Screen.width - 300, 90, 300, 300), "Controls: \nLeft Alt: Enable The Mod\nRight Alt: Right Hand\nMade By Odin (lbaak. on discord)", guiStyle22);
     }
 }
