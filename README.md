@@ -1,13 +1,13 @@
-# GorillaTagModTemplateProject
+# PCButtons
 by odin :)
-p.s i was banned from the discord after linking my number, #freeodin!
+p.s this was made in winter 23, not sure if it still works!
 ## Features
 
 - Clicks ANY type of button ingame :3
 
 ## Installation
 
-1. Download the latest release package from the [Releases](https://github.com/odinong/MusicGUI/releases/latest) page.
+1. Download the latest release package from the [Releases](https://github.com/odinong/PCButtons/releases/latest) page.
 2. Place the folder + dll inside in your gorilla tag plugins folder.
 3. Click Tab To Enable!
 
