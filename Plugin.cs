@@ -22,7 +22,7 @@ public class PCButtons : BaseUnityPlugin
     void Start()
     {
         cursorObject = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        cursorObject.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        cursorObject.transform.localScale = new Vector3(0.05f, 0.05f, 0.05f);
         cursorRenderer = cursorObject.GetComponent<Renderer>();
         cursorRenderer.material.color = Color.red;
 
