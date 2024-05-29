@@ -90,20 +90,20 @@ public class PCButtons : BaseUnityPlugin
             if (targetClass1 != null)
             {
                 targetClass1.ButtonActivation();
-                Debug.Log("Clicked Button");
+                Debug.Log("Clicked Wardrobe Button");
             }
             var targetClass2 = hit.collider.gameObject.GetComponent<SoundPostMuteButton>();
             if (targetClass2 != null)
             {
                 targetClass2.ButtonActivation();
-                Debug.Log("Clicked Button");
+                Debug.Log("Clicked Soundpost Button");
             }
             var targetClass3 = hit.collider.gameObject.GetComponent<GorillaKeyboardButton>();
             if (targetClass3 != null)
             {
                 targetClass3.testClick = true;
                 targetClass3.Update();
-                Debug.Log("Clicked Button");
+                Debug.Log("Clicked Keyboard Button");
             }
         }
         if (Physics.Raycast(ray, out RaycastHit hit2) && isRightHandEnabled == true)
@@ -119,20 +119,20 @@ public class PCButtons : BaseUnityPlugin
             {
                 targetClass1.ButtonActivationWithHand(false);
                 targetClass1.UpdateColor();
-                Debug.Log("Clicked Button");
+                Debug.Log("Clicked Wardrobe Button");
             }
             var targetClass2 = hit.collider.gameObject.GetComponent<SoundPostMuteButton>();
             if (targetClass2 != null)
             {
                 targetClass2.ButtonActivation();
-                Debug.Log("Clicked Button");
+                Debug.Log("Clicked Soundpost Button");
             }
             var targetClass3 = hit.collider.gameObject.GetComponent<GorillaKeyboardButton>();
             if (targetClass3 != null)
             {
                 targetClass3.testClick = true;
                 targetClass3.Update();
-                Debug.Log("Clicked Button");
+                Debug.Log("Clicked Keyboard Button");
             }
         }
     }
