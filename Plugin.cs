@@ -17,7 +17,6 @@ public class PCButtons : BaseUnityPlugin
     private Collider localPlayerCosmetics;
     private bool isRightHandEnabled;
     private bool isActive2 = false;
-    private bool helpTab;
 
     void Start()
     {
