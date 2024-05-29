@@ -195,6 +195,6 @@ public class PCButtons : BaseUnityPlugin
         guiStyle22.fontStyle = FontStyle.Bold;
         guiStyle22.alignment = TextAnchor.UpperRight;
         guiStyle22.normal.textColor = Color.magenta;
-        GUI.Label(new Rect(Screen.width - 150, 90, 300, 300), "Controls: \nLeft Alt: Enable The Mod\nRight Alt: Toggle Hand\nMade By Odin (lbaak. on discord)", guiStyle22);
+        GUI.Label(new Rect(Screen.width - 250, 90, 300, 300), "Controls: \nLeft Alt: Enable The Mod\nRight Alt: Toggle Hand\nMade By Odin (lbaak. on discord)", guiStyle22);
     }
 }
