@@ -35,6 +35,7 @@ public class PCButtons : BaseUnityPlugin
 
         Physics.IgnoreCollision(cursorObject.GetComponent<Collider>(), localPlayerCollider);
         Physics.IgnoreCollision(cursorObject.GetComponent<Collider>(), localPlayerCosmetics);
+        Debug.Log("Started PCButtons!");
     }
 
 
@@ -84,22 +85,26 @@ public class PCButtons : BaseUnityPlugin
             if (targetClass != null)
             {
                 targetClass.ButtonActivationWithHand(true);
+                Debug.Log("Clicked Button");
             }
             var targetClass1 = hit.collider.gameObject.GetComponent<WardrobeFunctionButton>();
             if (targetClass1 != null)
             {
                 targetClass1.ButtonActivation();
+                Debug.Log("Clicked Button");
             }
             var targetClass2 = hit.collider.gameObject.GetComponent<SoundPostMuteButton>();
             if (targetClass2 != null)
             {
                 targetClass2.ButtonActivation();
+                Debug.Log("Clicked Button");
             }
             var targetClass3 = hit.collider.gameObject.GetComponent<GorillaKeyboardButton>();
             if (targetClass3 != null)
             {
                 targetClass3.testClick = true;
                 targetClass3.Update();
+                Debug.Log("Clicked Button");
             }
         }
         if (Physics.Raycast(ray, out RaycastHit hit2) && isRightHandEnabled == true)
@@ -108,23 +113,27 @@ public class PCButtons : BaseUnityPlugin
             if (targetClass != null)
             {
                 targetClass.ButtonActivationWithHand(false);
+                Debug.Log("Clicked Button");
             }
             var targetClass1 = hit.collider.gameObject.GetComponent<WardrobeFunctionButton>();
             if (targetClass1 != null)
             {
                 targetClass1.ButtonActivationWithHand(false);
                 targetClass1.UpdateColor();
+                Debug.Log("Clicked Button");
             }
             var targetClass2 = hit.collider.gameObject.GetComponent<SoundPostMuteButton>();
             if (targetClass2 != null)
             {
                 targetClass2.ButtonActivation();
+                Debug.Log("Clicked Button");
             }
             var targetClass3 = hit.collider.gameObject.GetComponent<GorillaKeyboardButton>();
             if (targetClass3 != null)
             {
                 targetClass3.testClick = true;
                 targetClass3.Update();
+                Debug.Log("Clicked Button");
             }
         }
     }
@@ -145,10 +154,12 @@ public class PCButtons : BaseUnityPlugin
     private void UpdateStatusText()
     {
         statusText = "PCButtons: " + isActive;
+        Debug.Log("Switched Mod Activity");
     }
     private void UpdateStatusText2()
     {
         statusText2 = "Right Hand: " + isActive2;
+        Debug.Log("Switched Hands");
     }
 
     void OnGUI()
